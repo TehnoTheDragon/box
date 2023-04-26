@@ -1,0 +1,9 @@
+# Ignore Those
+.vs/*
+build/*
+conan/*
+*.vcxproj*
+*.sln
+
+# Don't Ignore Those
+!conanfile.txt
