@@ -1,0 +1,6 @@
+import "stl.io" as io
+import "./person.box"
+
+person0 : Person = Person("Tehno", "White", 1507)
+io::println(person0)
+io::println(person0.isOverAge(18) ? "Over 18" : "Under 18")

@@ -1,0 +1,28 @@
+import "stl.io" as io
+import "stl.string" as string
+
+export class Person : io::Printable {
+public:
+    private _name : string
+    private _lastName : string
+    private _age : u8
+
+    constructor (name : !&string, lastName : !&string, age : !u8) {
+        self._name = name
+        self._lastName = lastName
+        self._age = age
+    }
+
+    destructor () {}
+
+    function getName()      : string => self._name
+    function getLastName()  : string => self._lastName
+    function getFullName()  : string => self.getName() + " " + self.getLastName()
+    function getAge()       : u8 => self._age
+
+    function incrementAge(age : !u8) : void => self._age += 1
+
+    function isOverAge(age : !u8 = 18) : boolean => self._age >= age
+
+    override io::Printable::get() : string => io::Format("FirstName: {0} LastName: {1} Age: {2}", self.getName(), self.getLastName(), self.getAge())
+}
