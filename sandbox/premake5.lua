@@ -1,9 +1,5 @@
 workspace "box"
 
-local LLVM_INCLUDE_BUILD = "E:\\LLVM\\llvm-project\\build\\include"
-local LLVM_INCLUDE_SOURCE = "E:\\LLVM\\llvm-project\\llvm\\include"
-local LLVM_LIBS = "E:\\LLVM\\llvm-project\\build\\Debug\\lib"
-
 project "Sandbox"
     kind "ConsoleApp"
     language "C++"
