@@ -50,9 +50,10 @@ namespace box::frontend {
 		const auto& data = token.str();
 		TokenType tokenType = 0;
 		for (const auto& rule : _rules) {
-			if (std::regex_match(data, std::regex(rule.second)))
+			if (std::regex_match(data, std::regex(rule.second))) {
 				tokenType = rule.first;
 				break;
+			}
 		}
 		size_t position = token.position() - 1;
 
