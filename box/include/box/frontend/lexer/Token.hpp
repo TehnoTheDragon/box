@@ -8,5 +8,5 @@ namespace box::frontend {
 		TokenType type;
 		std::string data;
 	};
-	static const Token NULL_TOKEN{ 0, 0, "" };
+	const Token NULL_TOKEN{ 0, 0, "" };
 }
