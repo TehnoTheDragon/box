@@ -3,7 +3,7 @@ workspace "box"
 project "BoxLanguage"
     kind "StaticLib"
     language "C++"
-    cppdialect "C++20"
+    cppdialect "C++17"
 
     targetdir (get_target_direction())
     objdir (get_object_direction())
