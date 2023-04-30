@@ -1,0 +1,21 @@
+macro(write_file filepath content)
+    file(WRITE ${filepath} ${content})
+endmacro(write_file)
+
+macro(append_file filepath content)
+    file(APPEND ${filepath} ${content})
+endmacro(append_file)
+
+macro(read_file filepath out)
+    file(READ ${filepath} ${out})
+endmacro(read_file)
+
+macro(collect_files out)
+    if(${CMAKE_VERSION} VERSION_GREATER_EQUAL "3.11.0")
+        file(GLOB_RECURSE file CONFIGURE_DEPENDS ${ARGV})
+        list(APPEND ${out} ${file})
+    else()
+        file(GLOB file ${ARGV})
+        list(APPEND ${out} ${file})
+    endif()
+endmacro(collect_files)
