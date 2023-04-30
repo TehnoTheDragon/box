@@ -1,16 +1,17 @@
 #include <iostream>
-#include <box/frontend/lexer/Lexers.hpp>
-#include <box/frontend/parser/Parser.hpp>
+#include <box/frontend/lexer/lexers.hpp>
+#include <box/frontend/parser/parser.hpp>
+#include <box/frontend/parser/parser_rule.hpp>
 
 using namespace box::frontend;
 
-static auto TEXT_TO_PARSE = R"(
-x : i32 = 1.52f + 10.0F
-)";
-
 int main(int argc, char** argv) {
-	auto myParser = Parser(lexers::getBoxLexer());
+	/*ParserRule varDefRule = ParserRule(0);
+	
+	auto parser = Parser(lexers::getBoxLexer(), {
+		varDefRule,
+	});*/
 
-	std::cin.get();
+	std::system("pause");
 	return 0;
 }
