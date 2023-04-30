@@ -1,7 +1,7 @@
 #pragma once
 #include <vector>
 #include <regex>
-#include "Token.hpp"
+#include "token.hpp"
 
 namespace box::frontend {
 	struct LexicSnapshot {

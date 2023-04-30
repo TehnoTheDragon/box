@@ -1,4 +1,4 @@
-#include "box/frontend/lexer/Lexer.hpp"
+#include "box/frontend/lexer/lexer.hpp"
 
 namespace box::frontend {
 	LexicSnapshot::LexicSnapshot(const std::regex& regex, const std::string& text) :

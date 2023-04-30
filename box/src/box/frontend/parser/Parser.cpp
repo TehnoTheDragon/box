@@ -1,6 +1,6 @@
-#include "box/frontend/parser/Parser.hpp"
+#include "box/frontend/parser/parser.hpp"
 
 namespace box::frontend {
-	Parser::Parser(Lexer lexer) : _lexer(lexer) {}
+	Parser::Parser(Lexer lexer, std::vector<ParserRule>&& rules) : _lexer(lexer), _rules(std::move(rules)) {}
 	Parser::~Parser() {}
 }

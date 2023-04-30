@@ -1,5 +1,5 @@
 #pragma once
-#include "Lexer.hpp"
+#include "lexer.hpp"
 
 namespace box::frontend {
 	namespace lexers {

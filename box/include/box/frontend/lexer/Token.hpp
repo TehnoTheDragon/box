@@ -1,6 +1,6 @@
 #pragma once
 #include <string>
-#include "../Types.hpp"
+#include "../types.hpp"
 
 namespace box::frontend {
 	struct Token {
