@@ -1,9 +1,8 @@
 # Ignore Those
 .vs/*
+.vscode/*
 build/*
-conan/*
 *.vcxproj*
 *.sln
 
 # Don't Ignore Those
-!conanfile.txt
